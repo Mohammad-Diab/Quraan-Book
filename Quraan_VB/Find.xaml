@@ -1,0 +1,35 @@
+﻿<Window x:Class="Find"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="بحث" Height="450" Width="400" WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft" MinWidth="400" MinHeight="450">
+    <Grid>
+        <Rectangle Height="25" Margin="0,0,-1,-1" Name="Rectangle1" Stroke="{x:Null}" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="Azure" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="كلمة البحث:" Height="28" HorizontalAlignment="Left" Margin="3,10,0,0" Name="Label1" VerticalAlignment="Top" />
+        <Label Content="بحث في:" Height="28" HorizontalAlignment="Left" Margin="3,47,0,0" Name="Label2" VerticalAlignment="Top" />
+        <TextBox Height="Auto" Margin="85,12,83,0" Name="TextBox1" VerticalAlignment="Top" Background="{x:Null}" FontSize="14" />
+        <ComboBox Height="Auto" Margin="85,49,83,0" Name="ComboBox1" VerticalAlignment="Top" Background="{x:Null}" FontSize="14" />
+        <CheckBox Content="تجاهل الفروق بين الهمزات" Height="Auto" HorizontalAlignment="Left" Margin="10,80,0,0" Name="CheckBox1" VerticalAlignment="Top" Background="{x:Null}" />
+        <CheckBox Content="بحث عن كلمة كاملة فقط" Height="Auto" HorizontalAlignment="Left" Margin="10,100,0,0" Name="CheckBox2" VerticalAlignment="Top" Background="{x:Null}" />
+        <CheckBox Content="تجاهل الحركات" Height="Auto" HorizontalAlignment="Left" Margin="10,120,0,0" Name="CheckBox3" VerticalAlignment="Top" IsChecked="True" Background="{x:Null}" />
+        <Label Content="نتائج البحث:" Height="Auto" HorizontalAlignment="Left" Margin="1,140,0,0" Name="Label3" VerticalAlignment="Top" />
+        <ListBox Margin="3,163,3,24" Name="ListBox1" Background="{x:Null}" FontSize="20" FontFamily="Traditional Arabic" FontWeight="Bold"></ListBox>
+        <Label Content="اسم السورة:" Height="Auto" HorizontalAlignment="Left" Margin="-1,0,0,1" Name="Label4" VerticalAlignment="Bottom" />
+        <Label Content="رقم الآية:" Height="Auto" HorizontalAlignment="Left" Margin="150,0,0,1" Name="Label5" VerticalAlignment="Bottom" />
+        <Label Content="عدد النتائج:" Height="Auto" HorizontalAlignment="Right" Margin="0,0,5,1" Name="Label6" VerticalAlignment="Bottom" />
+        <Button Content="ابحث" Height="23" HorizontalAlignment="Right" Margin="0,117,28,0" Name="Button1" VerticalAlignment="Top" Width="75" Background="{x:Null}" />
+        <Separator Height="2" Margin="15,144,14,0" Name="Separator1" VerticalAlignment="Top" />
+    </Grid>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="OldLace" Offset="0" />
+            <GradientStop Color="White" Offset="0.471" />
+        </LinearGradientBrush>
+    </Window.Background>
+</Window>

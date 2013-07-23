@@ -1,0 +1,63 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="المصحف الالكتروني" Height="425" Width="700" WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft" PreviewKeyUp="F2_PreviewKeyUp">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="AliceBlue" Offset="0" />
+            <GradientStop Color="White" Offset="0.268" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*" />
+            <ColumnDefinition Width="645*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBox1" Grid.ColumnSpan="2" FontSize="22" FontFamily="KacstOne" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" IsReadOnly="True" IsUndoEnabled="False" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" Foreground="OrangeRed" SelectionBrush="#E5FF9B00" VerticalScrollBarVisibility="Visible" Text="اضغط على الزر F2 من لوحة المفاتيح لاختيار سورة&#xD;&#xA;أو من خلال القائمة ملف -&gt; اختيار سورة" Margin="0,22,0,0"/>
+        <Menu VerticalAlignment="Top" Background="#FFEFEFF2" Foreground="#FF1E1E1E">
+            <MenuItem Header="ملف" Height="22" FontSize="13">
+                <MenuItem Header="اختيار سورة" Click="Choose_Click"/>
+                <Separator/>
+                <MenuItem Header="بحث" Click="Find_Click"/>
+                <MenuItem Header="نسخ" Click="Copy_Click"/>
+                <Separator/>
+                <MenuItem Header="الخط" Click="Font_Click"/>
+                <Separator/>
+                <MenuItem Header="عن" Click="About_Click"/>
+                <Separator/>
+                <MenuItem Header="إغلاق" Click="Close_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Background="#FFEFEFF2" Grid.Column="1" Height="22" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="270*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="270*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="عدد آياتها" HorizontalAlignment="Right" Margin="0,0,10,0" x:Name="Label5" FontSize="15" FontWeight="Bold" Visibility="Visible" Grid.Column="2">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Blue" Offset="0.008" />
+                        <GradientStop Color="Green" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Text="ترتيبها" Margin="45,0,0,0" x:Name="Label4" FontSize="15" FontWeight="Bold" Visibility="Visible" Grid.Column="1" HorizontalAlignment="Left">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Blue" Offset="0.008" />
+                        <GradientStop Color="Green" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Text="اسم السورة" HorizontalAlignment="Left" Margin="10,0,0,0" Name="Label3" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Visibility="Visible">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Blue" Offset="0.008" />
+                        <GradientStop Color="Green" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>
