@@ -1,0 +1,26 @@
+﻿<Window x:Class="Quraan_Book.Fonts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="الخط" FlowDirection="RightToLeft" Height="430" Width="450" WindowStartupLocation="CenterScreen" FontSize="14" Loaded="Window_Loaded_1" Icon="Images/Select_Font.png" PreviewKeyUp="Window_PreviewKeyUp_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="الخط:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" VerticalAlignment="Bottom"><Span><Run Text="حجم الخط"/></Span><Span><Run FlowDirection="RightToLeft" Language="ar-sa" Text=":"/></Span></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="8,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"><Span><Run Text="لون الخط"/></Span><Span><Run FlowDirection="RightToLeft" Language="ar-sa" Text=":"/></Span></TextBlock>
+        <Button x:Name="_Save" Content="موافق" HorizontalAlignment="Right" Margin="0,0,90,10" VerticalAlignment="Bottom" Width="75" Background="{x:Null}" Height="25" Click="Save_Setting" FontSize="12" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Button x:Name="_Cancel" Content="الغاء" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Background="{x:Null}" Click="Cancel" Height="25" FontSize="12" Grid.Column="1" Grid.Row="1"/>
+        <ListBox x:Name="FontsNames" Margin="10,34,5,34" SelectionChanged="FontsNames_SelectionChanged"/>
+        <Slider x:Name="FontSizes" Margin="80,0,10,5" VerticalAlignment="Bottom" SmallChange="2" Minimum="8" Maximum="72" TickPlacement="BottomRight" Value="22" Ticks="8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72" AutoToolTipPlacement="BottomRight" ValueChanged="FontSizes_ValueChanged" LargeChange="10"/>
+        <ListBox x:Name="FontColors" Margin="5,34,10,34" Grid.Column="1" SelectionChanged="FontColors_SelectionChanged"/>
+        <TextBox x:Name="TextTest" Grid.ColumnSpan="2" Margin="10,10,10,42" Grid.Row="1" Text="أَحَسِبَ النَّاسُ أَن يُتْرَكُوا أَن يَقُولُوا آمَنَّا وَهُمْ لا يُفْتَنُونَ" TextAlignment="Center" AutoWordSelection="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
+        <CheckBox x:Name="Bold" Content="Bold" Grid.Column="1" Margin="0,0,10,10" VerticalAlignment="Bottom" FlowDirection="LeftToRight" HorizontalAlignment="Right"/>
+        <CheckBox x:Name="Italic" Content="Italic" Grid.Column="1" HorizontalAlignment="Left" Margin="25,0,0,10" VerticalAlignment="Bottom" FlowDirection="LeftToRight"/>
+    </Grid>
+</Window>
