@@ -13,7 +13,7 @@
             <ColumnDefinition Width="47*" />
             <ColumnDefinition Width="645*"/>
         </Grid.ColumnDefinitions>
-        <RichTextBox x:Name="Viewer" Grid.ColumnSpan="2" FontSize="22" FontFamily="KacstOne" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" IsReadOnly="True" SelectionBrush="#E5FF9B00" VerticalScrollBarVisibility="Visible" Margin="0,22,0,0">
+        <RichTextBox x:Name="Viewer" Grid.ColumnSpan="2" FontSize="22" FontFamily="KacstOne" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" IsReadOnly="True" VerticalScrollBarVisibility="Visible" Margin="0,22,0,0" SelectionBrush="#FFFF8C19">
             <FlowDocument>
                 <Paragraph x:Name="Par" TextAlignment="Center" Foreground="SlateGray">
                     <Run x:Name="basmala" FontWeight="Bold" Text="اضغط على الزر F2 من لوحة المفاتيح لاختيار سورة &#xD;&#xA;أو من خلال القائمة ملف  -&gt;  اختيار سورة" Foreground="RoyalBlue"/>
