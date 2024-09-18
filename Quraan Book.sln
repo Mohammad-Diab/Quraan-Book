@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Quraan_VB", "Quraan_VB\Quraan_VB.vbproj", "{2CAD0870-7D41-4210-BFA7-00521D2BE598}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Quraan Book", "Quraan Book\Quraan Book.vbproj", "{2CAD0870-7D41-4210-BFA7-00521D2BE598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
