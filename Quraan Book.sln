@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quraan_Book", "Quraan_Book\Quraan_Book.csproj", "{625C0E1E-029C-4DEA-BC21-6557F3A6430C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quraan Book", "Quraan Book\Quraan Book.csproj", "{625C0E1E-029C-4DEA-BC21-6557F3A6430C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

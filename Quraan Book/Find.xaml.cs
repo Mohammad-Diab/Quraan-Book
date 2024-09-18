@@ -343,7 +343,7 @@ namespace Quraan_Book
         private ListViewItem Make_Grid(string[] search_word, int sura_index, int aya_index)
         {
             Rectangle rectangle = new Rectangle();
-            rectangle.Fill = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Quraan_Book;component/Images/searchbackground.png")));
+            rectangle.Fill = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Quraan Book;component/Images/searchbackground.png")));
             rectangle.Margin = new Thickness(0, 0, 0, 0);
             rectangle.HorizontalAlignment = HorizontalAlignment.Left;
             rectangle.VerticalAlignment = VerticalAlignment.Top;
