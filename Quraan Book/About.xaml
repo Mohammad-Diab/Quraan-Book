@@ -7,7 +7,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Image Margin="129,10,128,0" Height="128" VerticalAlignment="Top" Source="Images/Icon.png"/>
-        <Label Content="Dr.Mohammad@outlook.com " Margin="84,0,0,43" VerticalAlignment="Bottom" FontSize="14" FontFamily="Segoe Print" Height="35" Foreground="Red" HorizontalAlignment="Left"/>
+        <Label Content="mohammad.diab93@outlook.com " Margin="84,0,0,43" VerticalAlignment="Bottom" FontSize="14" FontFamily="Segoe Print" Height="35" Foreground="Red" HorizontalAlignment="Left"/>
         <TextBlock Text="المصحف الالكتروني 2 (APPS PREVIEW)" Margin="78,135,0,0" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Left">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
